@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+</head>
+<body>
+<p id="lool"> ВВедите Город: <input id="lol" type="text"> 
+    <button id="lbt">ПОДТВ.</button></p> 
+<p id="lel">Тут будет информация о городе</p>
+
+<script>
+lbt.onclick = () => {
+    let url = "https://api.openweathermap.org/data/2.5/weather?q="+lol.value+"&appid=651cb76e91b6674c8165f3adff171f78"
+    lel.textContent = url
+
+}
+
+    
+</script>
+</body>
+</html>
